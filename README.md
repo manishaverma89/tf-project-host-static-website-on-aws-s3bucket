@@ -39,10 +39,16 @@ For .jpg and .jpeg files: image/jpeg
 
 # Resources i used in my Project
 resource "aws_s3_bucket" "mytfwebapp-demobucket"
+
 resource "aws_s3_bucket_public_access_block" "example"
+
 resource "aws_s3_bucket_policy"  "mytfwebapp-policy"
+
 resource "aws_s3_bucket_website_configuration" "mywebapp"
+
 resource "aws_s3_object" "index.html"
+
 resource "aws_s3_object"  "styles_css"
+
 output "url"
 
